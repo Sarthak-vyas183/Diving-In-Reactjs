@@ -1,11 +1,12 @@
 import React from 'react'
 import Login from './components/login'
-
+import Profile from './components/profile'
+import "./App.css"
 function App() {
   return (
-    <div>
-      <h1>Hy i name is sarthak vyas</h1>
+    <div className='app'>
       <Login/>
+      <Profile/>
     </div>
   )
 }

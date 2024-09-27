@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from '../context/UserContext'
 
 export default function profile() {
+    const {user} = useContext(UserContext)
+    console.log(user)
   return (
-    <div>
-      profile page hai he only for : 
+    <div className='profile'>
+      <h1>username : {user?.username || "Guest" }</h1>
+      <h1>password : {user?.password || "not define"} </h1>
     </div>
   )
 }
